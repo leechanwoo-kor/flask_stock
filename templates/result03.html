@@ -1,0 +1,18 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>주식정보 서비스</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>주식정보 서비스</h1>
+        <br>
+        <form action="{{ url_for('download_report')}}">
+            <input type="submit" value="보고서 다운로드" class="btn btn-primary"/>
+        </form>
+        <br>
+        {{ data | safe }}
+    </div>
+</body>
+</html>

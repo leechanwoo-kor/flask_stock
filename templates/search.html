@@ -1,0 +1,19 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>주식 정보 입력</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>주식 정보 입력</h1>
+      <form action="{{ url_for('result') }}" method="post">
+        <div class="form-group">
+          <label for="stock_ticker">주식 정보 선택:</label>
+          <input type="text" class="form-control" id="stock_ticker" name="stock_ticker"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
